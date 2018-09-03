@@ -4,7 +4,7 @@
 Album example
 @endsection
 
-@section('content');
+@section('content')
 
 <section class="jumbotron text-center">
     <div class="container">
@@ -188,17 +188,5 @@ Album example
             </div>
         </div>
     </div>
-</div>
-@endsection
-
-
-@section('footer')
-<div class="container">
-    <p class="float-right">
-        <a href="#">Back to top</a>
-    </p>
-    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting
-            started guide</a>.</p>
 </div>
 @endsection
