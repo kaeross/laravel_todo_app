@@ -10,3 +10,5 @@ class Post extends Model
         return view('posts.index');
     }
 }
+
+$post = new Post();
