@@ -20,4 +20,6 @@
     <button type="submit" class="btn btn-primary mb-5">Publish</button> 
 </form>
 
+@include('layouts.errors')
+
 @endsection

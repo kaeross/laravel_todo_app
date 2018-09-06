@@ -21,6 +21,16 @@
     <!-- Custom styles for this template -->
     <link href="https://blackrockdigital.github.io/startbootstrap-clean-blog/css/clean-blog.min.css" rel="stylesheet">
 
+    <style>
+      #mainNav .navbar-brand, #mainNav .navbar-nav>li.nav-item>a {
+        color: #333 !important;
+      }
+
+      header.masthead {
+        background-position-y: -135px !important;
+      }
+    </style>
+
   </head>
 
   <body>
@@ -53,8 +63,7 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg')">
-      <div class="overlay"></div>
+    <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1523978591478-c753949ff840')">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">

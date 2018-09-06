@@ -9,12 +9,11 @@ use App\Post;
 class BlogController extends Controller
 {
     public function index() {
-        $posts = Post::all();
+        $posts = Post::latest()->get();
         return view('blog.index', compact('posts'));
     }
 
-    public function show($id) {
-        $post = Post::where('id', $id)->get();
+    public function show(Post $post) {
         return view('blog.show', compact('post'));
     }
 
@@ -23,10 +22,10 @@ class BlogController extends Controller
     }
 
     public function store() {
-        $post = new Post;
-        $post->title = request('title');
-        $post->body = request('body');
-        $post->save();
+        $this->validate(request(), [
+            'title' => 'required'
+        ]);
+        Post::create(request(['title', 'body']));
         return redirect('/blog');
     }
 }
