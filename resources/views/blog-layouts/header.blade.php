@@ -21,16 +21,6 @@
     <!-- Custom styles for this template -->
     <link href="https://blackrockdigital.github.io/startbootstrap-clean-blog/css/clean-blog.min.css" rel="stylesheet">
 
-    <style>
-      #mainNav .navbar-brand, #mainNav .navbar-nav>li.nav-item>a {
-        color: #333 !important;
-      }
-
-      header.masthead {
-        background-position-y: -135px !important;
-      }
-    </style>
-
   </head>
 
   <body>

@@ -14,6 +14,9 @@ try {
     require('bootstrap');
 } catch (e) {}
 
+
+window.Vue = require('vue');
+
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -38,6 +41,11 @@ if (token) {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
+window.Vue.component('newComponent', ['./components/Example.vue']);
+const app = new Vue({
+    el: '#app'
+})
+
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
@@ -54,3 +62,4 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+

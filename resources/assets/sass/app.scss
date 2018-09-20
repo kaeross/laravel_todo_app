@@ -12,3 +12,16 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+h1, h2, h3 {
+  color: teal;
+}
+
+
+#mainNav .navbar-brand, #mainNav .navbar-nav>li.nav-item>a {
+  color: #333 !important;
+}
+
+header.masthead {
+  background-position-y: -135px !important;
+}
